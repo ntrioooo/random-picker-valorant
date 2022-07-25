@@ -11,34 +11,90 @@
     <title>Valorant Random Picker!</title>
   </head>
   <body>
-    <h1>Valorant Random Picker!</h1>
+    <h1 class="text-center">Valorant Random Picker!</h1>
 
     <form action="">
-        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-            <input type="checkbox" class="btn-check" id="jett" autocomplete="off" name="agent" value="jett">
-            <label class="btn btn-outline-primary" for="jett">Jett</label>
-          
-            <input type="checkbox" class="btn-check" id="phoenix" autocomplete="off" name="agent" value="phoenix">
-            <label class="btn btn-outline-primary" for="phoenix">Phoenix</label>
-          
-            <input type="checkbox" class="btn-check" id="reyna" autocomplete="off" name="agent" value="reyna">
-            <label class="btn btn-outline-primary" for="reyna">Reyna</label>
-          
-            <input type="checkbox" class="btn-check" id="fade" autocomplete="off" name="agent" value="fade">
-            <label class="btn btn-outline-primary" for="fade">Fade</label>
-          
-            <input type="checkbox" class="btn-check" id="sova" autocomplete="off" name="agent" value="sova">
-            <label class="btn btn-outline-primary" for="sova">Sova</label>
+      <div class="container">
+        <div class="row-md mt-3">
+          <h2 class="roles-agent">Controller</h2>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="brimbstone" name="agent" value="Brimbstone">
+              <label class="btn btn-outline-primary" for="brimbstone">Brimbstone</label>
+            
+              <input type="checkbox" class="btn-check" id="Viper" name="agent" value="Viper">
+              <label class="btn btn-outline-primary" for="Viper">Viper</label>
+            
+              <input type="checkbox" class="btn-check" id="Omen" name="agent" value="Omen">
+              <label class="btn btn-outline-primary" for="Omen">Omen</label>
+            
+              <input type="checkbox" class="btn-check" id="Astra" name="agent" value="Astra">
+              <label class="btn btn-outline-primary" for="Astra">Astra</label>
+          </div>
         </div>
-        <button type="submit">Get Agent</button>
+        <div class="row-md mt-3">
+          <h2 class="roles-agent">Initiator</h2>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="Sova" name="agent" value="Sova">
+              <label class="btn btn-outline-primary" for="Sova">Sova</label>
+            
+              <input type="checkbox" class="btn-check" id="Breach" name="agent" value="Breach">
+              <label class="btn btn-outline-primary" for="Breach">Breach</label>
+            
+              <input type="checkbox" class="btn-check" id="Skye" name="agent" value="Skye">
+              <label class="btn btn-outline-primary" for="Skye">Skye</label>
+            
+              <input type="checkbox" class="btn-check" id="Fade" name="agent" value="Fade">
+              <label class="btn btn-outline-primary" for="Fade">Fade</label>
+
+              <input type="checkbox" class="btn-check" id="KAY/O" name="agent" value="KAY/O">
+              <label class="btn btn-outline-primary" for="KAY/O">KAY/O</label>
+          </div>
+        </div>
+        <div class="row-md mt-3">
+          <h2 class="roles-agent">Sentinel</h2>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="Killjoy" name="agent" value="Killjoy">
+              <label class="btn btn-outline-primary" for="Killjoy">Killjoy</label>
+            
+              <input type="checkbox" class="btn-check" id="Sage" name="agent" value="Sage">
+              <label class="btn btn-outline-primary" for="Sage">Sage</label>
+            
+              <input type="checkbox" class="btn-check" id="Cypher" name="agent" value="Cypher">
+              <label class="btn btn-outline-primary" for="Cypher">Cypher</label>
+            
+              <input type="checkbox" class="btn-check" id="Chamber" name="agent" value="Chamber">
+              <label class="btn btn-outline-primary" for="Chamber">Chamber</label>
+          </div>
+        </div>
+        <div class="row-md mt-3">
+          <h2 class="roles-agent">Duelist</h2>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="Jett" name="agent" value="Jett">
+              <label class="btn btn-outline-primary" for="Jett">Jett</label>
+            
+              <input type="checkbox" class="btn-check" id="Reyna" name="agent" value="Reyna">
+              <label class="btn btn-outline-primary" for="Reyna">Reyna</label>
+            
+              <input type="checkbox" class="btn-check" id="Neon" name="agent" value="Neon">
+              <label class="btn btn-outline-primary" for="Neon">Neon</label>
+            
+              <input type="checkbox" class="btn-check" id="Yoru" name="agent" value="Yoru">
+              <label class="btn btn-outline-primary" for="Yoru">Yoru</label>
+
+              <input type="checkbox" class="btn-check" id="Raze" name="agent" value="Raze">
+              <label class="btn btn-outline-primary" for="Raze">Raze</label>
+
+              <input type="checkbox" class="btn-check" id="Phoenix" name="agent" value="Phoenix">
+              <label class="btn btn-outline-primary" for="Phoenix">Phoenix</label>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-4" type="submit">Get Agent</button>
+      </div>
     </form>
     
-    <h4>Kamu mendapatkan agent</h4>
-    <h3 class="agent-select"></h3>
+    <h4 class="text-center mt-3">Kamu mendapatkan agent</h4>
+    <h3 class="agent-select text-center"></h3>
     
-
-      
-
     <script src="script.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
