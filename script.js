@@ -4,6 +4,7 @@
 
 const form = document.querySelector('form');
 const agentSelect = document.querySelector('.agent-select');
+const checkboxes = document.getElementsByName('agent');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -18,3 +19,9 @@ form.addEventListener('submit', e => {
     
     console.log(randomAgent);
 });
+
+function selectAll(source) {
+    for(let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
