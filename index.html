@@ -14,29 +14,34 @@
     <h1 class="text-center">Valorant Random Picker!</h1>
 
     <form action="">
+      
       <div class="container">
+        <h2 class="roles-agent">Controller</h2>
+        <div class="select-agent">
+          <input type="checkbox" class="btn-check" id="btn-check-outlined" onclick="selectAllController(this)">
+          <label class="btn btn-outline-primary" for="btn-check-outlined">Select All</label>
+        </div>
         <div class="row mt-3">
-          <h2 class="roles-agent">Controller</h2>
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-            <input type="checkbox" class="btn-check" id="Brimstone" name="agent" value="Brimstone">
+            <input type="checkbox" class="btn-check" id="Brimstone" name="agent-controller" value="Brimstone">
             <label class="btn btn-outline-primary" for="Brimstone">
               <img src="assets/brimstone.png" width="150px" class="img-fluid">
               <h2>Brimstone</h2>
             </label>
           
-            <input type="checkbox" class="btn-check" id="Omen" name="agent" value="Omen">
+            <input type="checkbox" class="btn-check" id="Omen" name="agent-controller" value="Omen">
             <label class="btn btn-outline-primary" for="Omen">
               <img src="assets/omen.png" width="150px" class="img-fluid">
               <h2>Omen</h2>
             </label>
           
-            <input type="checkbox" class="btn-check" id="Astra" name="agent" value="Astra">
+            <input type="checkbox" class="btn-check" id="Astra" name="agent-controller" value="Astra">
             <label class="btn btn-outline-primary" for="Astra">
               <img src="assets/astra.png" width="150px" height="100px" class="img-fluid">
               <h2>Astra</h2>
             </label>
           
-            <input type="checkbox" class="btn-check" id="Viper" name="agent" value="Viper">
+            <input type="checkbox" class="btn-check" id="Viper" name="agent-controller" value="Viper">
             <label class="btn btn-outline-primary" for="Viper">
               <img src="assets/viper.png" width="150px" class="img-fluid">
               <h2>Viper</h2>
@@ -44,34 +49,38 @@
           </div>
         </div>
 
+        <h2 class="roles-agent">Initiator</h2>
+        <div class="select-agent">
+          <input type="checkbox" class="btn-check" id="btn-check-outlined" onclick="selectAllInitiator(this)">
+          <label class="btn btn-outline-primary" for="btn-check-outlined">Select All</label><br>
+        </div>
         <div class="row mt-3">
-          <h2 class="roles-agent">Initiator</h2>
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-              <input type="checkbox" class="btn-check" id="Sova" name="agent" value="Sova">
+              <input type="checkbox" class="btn-check" id="Sova" name="agent-initiator" value="Sova">
               <label class="btn btn-outline-primary" for="Sova">
                 <img src="assets/sova.png" width="150px" class="img-fluid">
                 <h2>Sova</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Breach" name="agent" value="Breach">
+              <input type="checkbox" class="btn-check" id="Breach" name="agent-initiator" value="Breach">
               <label class="btn btn-outline-primary" for="Breach">
                 <img src="assets/breach.png" width="150px" class="img-fluid">
                 <h2>Breach</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Skye" name="agent" value="Skye">
+              <input type="checkbox" class="btn-check" id="Skye" name="agent-initiator" value="Skye">
               <label class="btn btn-outline-primary" for="Skye">
                 <img src="assets/skye.png" width="150px" height="100px" class="img-fluid">
                 <h2>Skye</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Fade" name="agent" value="Fade">
+              <input type="checkbox" class="btn-check" id="Fade" name="agent-initiator" value="Fade">
               <label class="btn btn-outline-primary" for="Fade">
                 <img src="assets/fade.png" width="150px" class="img-fluid">
                 <h2>Fade</h2>
               </label>
 
-              <input type="checkbox" class="btn-check" id="KAY/O" name="agent" value="KAY/O">
+              <input type="checkbox" class="btn-check" id="KAY/O" name="agent-initiator" value="KAY/O">
               <label class="btn btn-outline-primary" for="KAY/O">
                 <img src="assets/kayo.png" width="150px" class="img-fluid">
                 <h2>KAY/O</h2>
@@ -79,34 +88,36 @@
           </div>
         </div>
 
+        <h2 class="roles-agent">Sentinel</h2>
+        <input type="checkbox" class="btn-check" id="btn-check-outlined" onclick="selectAllSentinel(this)">
+        <label class="btn btn-outline-primary" for="btn-check-outlined">Select All</label><br>
         <div class="row mt-3">
-          <h2 class="roles-agent">Sentinel</h2>
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-              <input type="checkbox" class="btn-check" id="Killjoy" name="agent" value="Killjoy">
+              <input type="checkbox" class="btn-check" id="Killjoy" name="agent-sentinel" value="Killjoy">
               <label class="btn btn-outline-primary" for="Killjoy">
                 <img src="assets/killjoy.png" width="150px" class="img-fluid">
                 <h2>Killjoy</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Breach" name="agent" value="Breach">
+              <input type="checkbox" class="btn-check" id="Breach" name="agent-sentinel" value="Breach">
               <label class="btn btn-outline-primary" for="Breach">
                 <img src="assets/breach.png" width="150px" class="img-fluid">
                 <h2>Breach</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Sage" name="agent" value="Sage">
+              <input type="checkbox" class="btn-check" id="Sage" name="agent-sentinel" value="Sage">
               <label class="btn btn-outline-primary" for="Sage">
                 <img src="assets/sage.png" width="150px" height="100px" class="img-fluid">
                 <h2>Sage</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Cypher" name="agent" value="Cypher">
+              <input type="checkbox" class="btn-check" id="Cypher" name="agent-sentinel" value="Cypher">
               <label class="btn btn-outline-primary" for="Cypher">
                 <img src="assets/cypher.png" width="150px" class="img-fluid">
                 <h2>Cypher</h2>
               </label>
 
-              <input type="checkbox" class="btn-check" id="Chamber" name="agent" value="Chamber">
+              <input type="checkbox" class="btn-check" id="Chamber" name="agent-sentinel" value="Chamber">
               <label class="btn btn-outline-primary" for="Chamber">
                 <img src="assets/chamber.png" width="150px" class="img-fluid">
                 <h2>Chamber</h2>
@@ -114,47 +125,48 @@
           </div>
         </div>
 
+        <h2 class="roles-agent">Duelist</h2>
+        <input type="checkbox" class="btn-check" id="btn-check-outlined" onclick="selectAllDuelist(this)">
+        <label class="btn btn-outline-primary" for="btn-check-outlined">Select All</label><br>
         <div class="row mt-3">
-          <h2 class="roles-agent">Duelist</h2>
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-              <input type="checkbox" class="btn-check" id="Jett" name="agent" value="Jett">
+              <input type="checkbox" class="btn-check" id="Jett" name="agent-duelist" value="Jett">
               <label class="btn btn-outline-primary" for="Jett">
                 <img src="assets/jett.png" width="150px" class="img-fluid">
                 <h2>Jett</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Yoru" name="agent" value="Yoru">
+              <input type="checkbox" class="btn-check" id="Yoru" name="agent-duelist" value="Yoru">
               <label class="btn btn-outline-primary" for="Yoru">
                 <img src="assets/yoru.png" width="150px" class="img-fluid">
                 <h2>Yoru</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Phoenix" name="agent" value="Phoenix">
+              <input type="checkbox" class="btn-check" id="Phoenix" name="agent-duelist" value="Phoenix">
               <label class="btn btn-outline-primary" for="Phoenix">
                 <img src="assets/phoenix.png" width="150px" height="100px" class="img-fluid">
                 <h2>Phoenix</h2>
               </label>
             
-              <input type="checkbox" class="btn-check" id="Reyna" name="agent" value="Reyna">
+              <input type="checkbox" class="btn-check" id="Reyna" name="agent-duelist" value="Reyna">
               <label class="btn btn-outline-primary" for="Reyna">
                 <img src="assets/reyna.png" width="150px" class="img-fluid">
                 <h2>Reyna</h2>
               </label>
 
-              <input type="checkbox" class="btn-check" id="Raze" name="agent" value="Raze">
+              <input type="checkbox" class="btn-check" id="Raze" name="agent-duelist" value="Raze">
               <label class="btn btn-outline-primary" for="Raze">
                 <img src="assets/raze.png" width="150px" class="img-fluid">
                 <h2>Raze</h2>
               </label>
 
-              <input type="checkbox" class="btn-check" id="Neon" name="agent" value="Neon">
+              <input type="checkbox" class="btn-check" id="Neon" name="agent-duelist" value="Neon">
               <label class="btn btn-outline-primary" for="Neon">
                 <img src="assets/neon.png" width="150px" class="img-fluid">
                 <h2>Neon</h2>
               </label>
           </div>
         </div>
-        <input type="checkbox" onclick="selectAll(this)">Select All<br>
         <button class="btn btn-primary mt-4" type="submit">Get Agent</button>
       </div>
     </form>

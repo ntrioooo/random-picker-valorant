@@ -4,7 +4,34 @@
 
 const form = document.querySelector('form');
 const agentSelect = document.querySelector('.agent-select');
-const checkboxes = document.getElementsByName('agent');
+const agentController = document.getElementsByName('agent-controller');
+const agentSentinel = document.getElementsByName('agent-sentinel');
+const agentInitiator = document.getElementsByName('agent-initiator');
+const agentDuelist = document.getElementsByName('agent-duelist');
+
+function selectAllController(source) {
+    for(let i = 0; i < agentController.length; i++) {
+        agentController[i].checked = source.checked;
+    }  
+}
+
+function selectAllSentinel(sen) {
+    for(let i = 0; i < agentSentinel.length; i++) {
+        agentSentinel[i].checked = sen.checked;
+    }
+}
+
+function selectAllInitiator(ini) {
+    for(let i = 0; i < agentInitiator.length; i++) {
+        agentInitiator[i].checked = ini.checked;
+    }
+}
+
+function selectAllDuelist(duel) {
+    for(let i = 0; i < agentDuelist.length; i++) {
+        agentDuelist[i].checked = duel.checked;
+    }
+}
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -20,8 +47,4 @@ form.addEventListener('submit', e => {
     console.log(randomAgent);
 });
 
-function selectAll(source) {
-    for(let i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].checked = source.checked;
-    }
-}
+console.log(agentController);
